@@ -9,20 +9,58 @@
 <body>
     <!--NAVBAR-->
     <nav class="nav">
-        <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-          <div class="nav-title">
-            Portfolio
-          </div>
-        </div>       
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="project.html">Project</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="about.html">Contact</a></li>
-        </ul>
-</nav>
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+          Portfolio
+        </div>
+      </div>   
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>    
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="about.html">Contact</a></li>
+      </ul>
+    </nav>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<div class="form-container">
+  <span><i class="fa-solid fa-xmark"></i></span>
+  <h2>Send Us a Message</h2>
+  <form action="#" method="post">
+    <div class="form-group">
+      <label for="full-name">Full Name</label>
+      <input type="text" id="full-name" name="full_name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Your email</label>
+      <input type="text" id="full-name" name="full_name">
+    </div>
+
+    <div class="form-group">
+      <select id="action" name="action" required>
+        <option value="post">I want to Post</option>
+        <option value="inquire">Inquire</option>
+        <option value="feedback">Give Feedback</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <textarea id="message" name="message" placeholder="Your message goes here..." required></textarea>
+    </div>
+    <button type="submit" class="submit-button">Submit form</button>
+  </form>
+</div>
 <!--FOOTER CONTAINER-->
 <footer class="footer">
 <div class="footer-content">

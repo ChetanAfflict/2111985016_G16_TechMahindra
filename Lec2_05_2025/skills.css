@@ -134,3 +134,138 @@
         width: 90%;
     }
 }
+
+/*skills*/
+
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.skill {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 220px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.skill p {
+  font-size: 16px;
+  color: #666;
+}
+
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+
+@media (max-width: 768px) {
+  .skills-container {
+      justify-content: center;
+  }
+
+  .skill {
+      width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 1rem;
+  }
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 0.2rem;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    background-color: #0C4F4F;
+    height: 0;
+    transition: all 0.3s ease-in;
+    top: 40px;
+    left: 0;
+    overflow: hidden;
+  }
+  .nav > .nav-list > li {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  .nav > #nav-check:checked ~ .nav-list {
+    height: calc(100vh - 50px);
+  }
+
+
+.myprofile-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.description-container,
+.profile-img-container {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+.description-container {
+    border: none;
+    background-color: rgba(193, 171, 232, 0.779);
+}
+
+.name-description-container {
+    font-size: 30px;
+    text-align: center;
+}
+
+.p3-description-container {
+    font-size: 18px;
+}
+
+.footer-content {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-md);
+}
+
+.footer-title-container {
+    width: 90%;
+}
+
+.nav .nav-header {
+    flex: 1;
+    text-align: center;
+}
+}
