@@ -87,20 +87,20 @@
 //fetching data from api 
 // https://api.chucknorris.io/
 
-// async function fetchAPIdata(){
-//     try{
-//         const data=await fetch("https://api.chucknorris.io/jokes/categories");
-//         const mydata=await data.json();
-//         return mydata;
-//     }
-//     catch(err){
-//         console.log(err);
-//     }
-// }
-// const finaldata=fetchAPIdata();
+async function fetchAPIdata(){
+    try{
+        const data=await fetch("https://api.chucknorris.io/jokes/categories");
+        const mydata=await data.json();
+        return mydata;
+    }
+    catch(err){
+        console.log(err);
+    }
+}
+const finaldata=fetchAPIdata();
 
-// finaldata.then((res)=>{
-//     console.log(res);
-// })
+finaldata.then((res)=>{
+    console.log(res);
+})
 
 
